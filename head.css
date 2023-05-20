@@ -1,0 +1,118 @@
+/*
+----------
+----------
+----------
+MADE BY DEMCHENKO MIKHAIL WITH HELP FROM ON-LINE TUTORIALS (w3schools.net)
+----------
+----------
+----------
+*/
+
+/* Styling the header... */
+.header {
+  padding: 40px; /* Padding */
+  text-align: center; /* Align text */
+  background: #eaaf49;
+  color: white;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+/* Styling the top navigation bar... */
+.navbarOwn {
+  overflow: hidden; /* Prevent text going from the allocated space */
+  background-color: #3c3939; /* Dark background color */
+}
+
+/* Styling the navigation bar links... */
+.navbarOwn a {
+  float: left; /* Links stay side-by-side */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none; /* Remove underline */
+}
+
+/* On mouse-over... */
+.navbarOwn a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Link on the right... */
+.navbarOwn a.right {
+  float: right;
+}
+
+/* Column container... */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main... */
+.main {
+  flex: 30%;
+  margin: 12px;
+  background-color: white;
+  padding: 20px;
+}
+/* Footer... */
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+/* Menu item, with image and what-not. ONLY FOR THIS PAGE. */
+.menuitem {
+  display: block;
+  background-color: #5cee80;
+  text-align: left;
+  image-rendering: optimizeQuality;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.menuitem img {
+  float: right;
+}
+
+/* About section of the website. */
+.about {
+  display: block;
+  background-color: #66e530;
+  text-align: center;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.deliverybutton {
+  color: white;
+  background-color: #d3d3d3;
+  text-align: center;
+  display: block;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.deliverybutton:hover {
+  background-color: #9d9d9d;
+  color: black;
+}
+
+/* Contact section of the website. Intertwined with bootstrap's CSS for forms. */
+.contactinfo {
+  display: block;
+  background-color: #62cddb;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  overflow: hidden;
+}

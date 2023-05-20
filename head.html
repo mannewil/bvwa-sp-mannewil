@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>De La Giorno - Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="head.css" />
+    <script src="bootstrap.bundle.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="head.js"></script>
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Century Gothic", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Start content-->
+    <div class="header">
+      <h1>De La Giorno's!</h1>
+      <p>Your number one choice for some of Giorno magic!</p>
+    </div>
+    <!-- Navigation bar (append to top)-->
+    <div class="navbarOwn">
+      <a href="#info" class="selected">INFO</a>
+      <a href="#menu">MENU</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#contact" class="right">CONTACT US</a>
+    </div>
+
+    <!-- Info Content -->
+    <div class="info">
+      <h2>Welcome!</h2>
+      <h5>Making delicious pasta since 1997!</h5>
+      <p>Please see our menu for our classic offers!</p>
+      <br />
+      <img src="head_interior.jpg" style="width: 60%; padding: 20px" />
+    </div>
+
+    <!-- Menu Content -->
+    <div class="menu" id="menu">
+      <div class="menuitem">
+        <img
+          src="menu_creampasta.jpg"
+          style="width: 10%; padding: 5px; align-content: left"
+        />
+        <h2><b>Cream Pasta</b></h2>
+        <h3>Ingredients:</h3>
+        <h4>Pasta, garlic, cream, bacon.</h4>
+        <h6>Rated 10/10 by all chefs worldwide!</h6>
+        <br />
+      </div>
+      <div class="menuitem">
+        <img
+          src="menu_creampasta.jpg"
+          style="width: 10%; padding: 5px; align-content: left"
+        />
+        <h2><b>Cream Pasta</b></h2>
+        <h3>Ingredients:</h3>
+        <h4>Pasta, garlic, cream, bacon.</h4>
+        <h6>Rated 10/10 by all chefs worldwide!</h6>
+        <br />
+      </div>
+      <div class="menuitem">
+        <img
+          src="menu_creampasta.jpg"
+          style="width: 10%; padding: 5px; align-content: left"
+        />
+        <h2><b>Cream Pasta</b></h2>
+        <h3>Ingredients:</h3>
+        <h4>Pasta, garlic, cream, bacon.</h4>
+        <h6>Rated 10/10 by all chefs worldwide!</h6>
+        <br />
+      </div>
+      <div class="menuitem">
+        <img
+          src="menu_creampasta.jpg"
+          style="width: 10%; padding: 5px; align-content: left"
+        />
+        <h2><b>Cream Pasta</b></h2>
+        <h3>Ingredients:</h3>
+        <h4>Pasta, garlic, cream, bacon.</h4>
+        <h6>Rated 10/10 by all chefs worldwide!</h6>
+        <br />
+      </div>
+      <div class="menuitem">
+        <img
+          src="menu_creampasta.jpg"
+          style="width: 10%; padding: 5px; align-content: left"
+        />
+        <h2><b>Cream Pasta</b></h2>
+        <h3>Ingredients:</h3>
+        <h4>Pasta, garlic, cream, bacon.</h4>
+        <h6>Rated 10/10 by all chefs worldwide!</h6>
+        <br />
+      </div>
+    </div>
+
+    <!-- About Content -->
+    <div class="about" id="about">
+      <h2>We're the best italian cuisine providers ever!</h2>
+      <h3>
+        We deliver our food as well! Just click the button here to find out
+        about our fees, and offers!
+      </h3>
+      <h3>
+        Please note that if we take too long to deliver your food, it's for
+        free. We also cannot stand having you eat our food cold, so if it
+        arrived cold - we'll offer you a voucher.
+      </h3>
+      <a href="login.html" class="deliverybutton"><h2>Delivery!</h2></a>
+    </div>
+
+    <!-- Contact Content -->
+    
+    <div class="contactinfo" id="contact">
+      <h2>Questions? Letters? Suggestions?</h2>
+      <h4>
+        Please leave your message, along with your contact information, in the
+        form below! We promise to respond to everyone who sends us something!
+      </h4>    
+      <!-- Form of Contact -->
+      <div class="container-fluid d-flex justify-content-center align-items-center p-10">
+        <form id="contactform" action="#">
+          <div class="mb-3">
+            <input
+              placeholder="Your e-mail address here..."
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+            <input
+              placeholder="Your name here..."
+              type="text"
+              class="form-control"
+              id="inputName"
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="reservationCheck"
+            />
+            <label class="form-check-label" for="reservationCheck"
+              >Are you looking to reserve?</label
+            >
+          </div>
+          <div id="showReservationField">
+            <div class="mb-3">
+              <input
+                placeholder="How many people?"
+                type="number"
+                class="form-control"
+                id="inputPeople"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-check-label" for="messageArea"
+              >Leave your message below!</label
+            >
+            <textarea class="form-control" id="messageArea" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var form = $("#contactform"),
+        checkbox = $("#reservationCheck"),
+        chShowReservation = $("#showReservationField");
+      chShowReservation.hide();
+      checkbox.on("click", function () {
+        if ($(this).is(":checked")) {
+          chShowReservation.show();
+          chShowReservation.find("input").attr("required", true);
+        } else {
+          chShowReservation.hide();
+          chShowReservation.find("input").attr("required", false);
+        }
+      });
+    </script>
+    <!-- End -->
+  </body>
+  <!-- Footer -->
+  <div class="footer">
+    <h2>We make delicious food!</h2>
+  </div>
+</html>

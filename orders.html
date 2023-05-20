@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Delivery!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="orders.css" />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Century Gothic", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Delivery service for De La Giorno!</h1>
+      <div class="navbarOwn">
+        <a href="#menu">Menu!</a>
+        <a href="#basket" class="right">Basket</a>
+        <a href="head.html" class="right">Go back</a>
+      </div>
+    </div>
+    <main>
+      <div class="container_shopping">
+        <h1>Your delivery service!</h1>
+        <p>
+          Simply add to cart whatever you want, then checkout, and pay! Your
+          order will be directed to us, and you'll download your receipt as
+          well, containing your food, and totals.
+        </p>
+        <p>
+          If you aren't happy with what's laying in your cart, please empty it
+          by clicking "Empty cart" button.
+        </p>
+        <div id="alerts"></div>
+        <div class="container_products" id="menu">
+          <div class="product">
+            <h3 class="productname">Garlic Pasta</h3>
+            <p>Delicious freshly-tangled pasta, with garlic sauce and ham.</p>
+            <p class="price">$5.05</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Al Girono Special</h3>
+            <p>
+              Pasta with cheese, butter, and chives. A very simple, yet
+              addicting flavour! Uses only parmegianno regiano.
+            </p>
+            <p class="price">$8.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Baguette</h3>
+            <p>Freshly baked baguette.</p>
+            <p class="price">$1.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Chicken cuts</h3>
+            <p>
+              Chicken cuts with tomatoes, herbs and pasta. Chicken is marinated
+              in red wine.
+            </p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Pizza De La Girono</h3>
+            <p>
+              A special pizza for a special person... Tomato sauce, ham,
+              mozarella, chicken, herbs, fresh greens.
+            </p>
+            <p class="price">$12.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Miso soup</h3>
+            <p>A Japanese classic!</p>
+            <p class="price">$3.25</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Tuna Pasta</h3>
+            <p>
+              Pasta for those, who appreciate good seafood. Tuna, vegetables,
+              pasta, cream.
+            </p>
+            <p class="price">$14.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Pomidorro</h3>
+            <p>Tomato stew with beef.</p>
+            <p class="price">$4.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Lady fingers</h3>
+            <p>Lady fingers... with melted cheese...</p>
+            <p class="price">$6.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Missingno</h3>
+            <p>Gaming fans shall enjoy this!</p>
+            <p class="price">$6.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Carkat</h3>
+            <p>It's better you don't know what it's made of...</p>
+            <p class="price">$33.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname">Olives</h3>
+            <p>Just three olives.</p>
+            <p class="price">$0.50</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+        </div>
+        <div class="container_cart" id="basket">
+          <h2>Cart</h2>
+          <table>
+            <thead>
+              <tr>
+                <th><strong>Product</strong></th>
+                <th><strong>Price</strong></th>
+              </tr>
+            </thead>
+            <tbody id="carttable"></tbody>
+          </table>
+          <hr />
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+
+              <td>$<span id="total">0</span></td>
+            </tr>
+          </table>
+
+          <div class="cart-buttons">
+            <button id="emptycart">Empty Cart</button>
+            <button id="checkout">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- partial -->
+  </body>
+
+  <!-- Else script doesn't work. -->
+  <script src="orders.js"></script>
+</html>
